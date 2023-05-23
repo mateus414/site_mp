@@ -1,0 +1,465 @@
+/*Configurações da fonte do site*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;900&display=swap');
+
+/*Configurações das Cores*/
+
+:root{
+    --cor1:#b496fa;
+    --cor2:#0a1130;
+    --cor3:#df9bc5c7;
+    --cor4:#140c0c;
+    --cor5:#ffff;
+    --cor6:#101ee6;
+}
+
+/*Configurações dos Navegadores*/
+
+*{
+    font-family:'roboto', sans-serif;
+    font-size:18px;
+    font-weight:400;
+    text-decoration:none;
+    list-style:none;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+/*Formatação do Body*/
+body{
+    background-color:var(--cor3);
+}
+
+header{
+    max-width:95%;
+    height:auto;
+    margin:0 auto;
+    background-color:var(--cor1);
+    text-align:center;
+    border-radius:0px 0px 12px 12px;
+    padding-top:1rem;
+    box-shadow:0px 4px 3px var(--cor2);
+}
+
+nav li{
+    display: inline-block;
+    margin:2rem 1rem;
+}
+
+nav a{
+    color:var(--cor4)
+}
+
+nav a:hover{
+    color:var(--cor2);
+    border-bottom: 4px solid;
+}
+
+/* Configurações do MAIN*/
+
+main{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Configurações do banner*/
+/*
+.banner{
+    width: 100%;
+    margin:0 auto;
+    text-align: center;
+
+    overflow: hidden;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.banner img{
+    object-fit: cover;
+    width: 100%;
+}*/
+
+/* Configurações carrossel do banner*/
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+}
+
+/* ------- Formatação dos Cards ---------- */
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--cor1);
+    width: 100%;
+    height: 70vh;
+}
+
+.produtos h2{
+    font-weight: 700;
+    color: var(--cor2);
+    letter-spacing: 2px;
+    padding-top: 2%;
+
+}
+
+.produtos p{
+    font-size: 1.2rem;
+    color:var(--cor2);
+    font-weight: 700;
+    padding-top: 3%;
+}
+
+.produtos a{
+    color: var(--cor5);
+    font-size: 0.8rem;
+}
+
+/*----- Formatação Promoção Dia dos Pais -----*/
+
+.promocao img{
+    width: 100%;
+}
+
+/* ----- Formatação dos Pagamentos ------*/
+
+.pagamento{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 1% auto;
+}
+
+.pag{
+    padding: 1%;
+}
+
+.pag h3{
+    color: var(--cor4);
+}
+
+.pag p{
+    color: var(--cor2);
+    font-size: 0.8rem;
+}
+
+.pag img{
+    padding-top: 8%;
+}
+
+/* Formatação das ofertas do dia */
+
+.tit_dia{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--cor5);
+    color: var(--cor2);
+    margin: 2% auto;
+    padding-top: 2%;
+}
+
+.dia{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--cor5);
+    margin:-3% auto;
+}
+
+.prod_dia{
+    margin:3%;
+}
+
+.prod_dia h3{
+    font-weight: bold;
+}
+
+/* Formatação do Rodapé */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--cor3);
+    color: var(--cor4);
+    padding-top: 2%;
+    text-align: center;
+}
+
+.rodape a{
+    font-size: 0.8rem;
+    color: var(--cor4);
+}
+
+.rodape img{
+    padding: 5%;
+}
+
+/* Formatação Página de Cadastros */
+
+.cadastro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: var(--cor1);
+    margin: 2% auto;
+    width: 90%;
+    border-radius: 10px 10px 0 0;
+    color: var(--cor4);
+}
+
+.cad{
+    width: 80%;
+}
+
+.cad h1{
+    font-size: 1.6rem;
+    text-align: center;
+    color: var(--cor2);
+    font-weight: 700;
+    margin-bottom: 2%;
+}
+
+#cadastro input[type="text"], input[type="email"], input[type="password"]{
+    width: 400px;
+    height:50px;
+    color:var(--cor2);
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 1%;
+}
+
+#cadastro input[type="radio"]{
+    margin-right: 2%;
+}
+
+#cadastro input[type="submit"]{
+    width: 250px;
+    height: 50px;
+    padding: 1%;
+    background-color: var(--cor2);
+    color: var(--cor5);
+    border: none;
+    margin-top:3%;
+    border-radius: 10px;
+}
+
+#cadastro input[type="submit"]:hover{
+    background-color: var(--cor6);
+    cursor: pointer;
+}
+
+.cad img{
+    width: 100%;
+    height: 82%;
+    margin: -1%;
+}
+
+/* Configurações da página entrar */
+
+.login{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: var(--cor1);
+    margin: 2% auto;
+    width: 90%;
+    border-radius: 10px 10px 0 0;
+}
+
+.logar{
+    width: 80%;
+
+}
+
+#logar1{
+    width: 95%;
+}
+
+.logar h1{
+    font-size: 1.8rem;
+    text-align: center;
+    color:var(--cor2);
+    font-weight: 700;
+    margin-bottom: 3%;
+}
+
+.logar input[type="submit"]{
+    width: 250px;
+    height: 50px;
+    background-color: var(--cor2);
+    border: none;
+    margin-top: 3%;
+    border-radius: 10px;
+    color: var(--cor5);
+}
+
+.logar input[type="submit"]:hover{
+    background-color:var(--cor6);
+    cursor:pointer;
+}
+
+.logar img{
+    margin-left:-240px;
+    margin-top: 50px;
+}
+
+.logar #id_hoje{
+    position: absolute;
+    font-size: 1.5rem;
+    padding: 8% 20%;
+    line-height: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    color: var(--cor2);
+}
+
+.logar #p_hoje{
+    position: absolute;
+    padding:12% 20%;
+    line-height: 1.2rem;
+    letter-spacing: 0.1rem;
+    color: var(--cor4);
+}
+
+.logar a{
+    position: absolute;
+    padding: 1% 2%;
+    background-color: var(--cor2);
+    color: var(--cor5);
+    margin: 14% -15%;
+    border: none;
+    border-radius: 10px;
+}
+
+.logar a:hover{
+    background-color: var(--cor6);
+    cursor: pointer;
+}
+
+/* Formatação da áres do usuário */
+
+.barra_top{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    background-color: var(--cor2);
+    width: 95%;
+    margin: 2% auto;
+    padding: 1% 5%;
+    border-radius: 10px 10px 0 0;
+}
+
+.barra h1{
+    color: var(--cor5);
+}
+
+.barra a{
+    color: var(--cor5);
+}
+
+.usuario{
+    width: 95%;
+    height: 500px;
+    background-color: var(--cor1);
+    margin: -2% auto;
+    padding: 2%;
+    text-align: center;
+}
+
+.usuario h2{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--cor4);
+}
+
+.usuario p{
+    color: var(--cor2);
+}
+
+/* Configurações da página Contato */
+
+.contato {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor1);
+    margin: 2% auto;
+    width: 90%;
+    border-radius: 10px 10px 0 0;
+}
+
+.cont{
+    width: 80%;
+}
+
+.cont h1{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--cor2);
+    font-weight: 700;
+    margin-bottom: 3%;
+}
+
+.cont form{
+    text-align: center;
+}
+
+.cont input[type="text"], input[type="email"], input[type="tel"]{
+    width: 400px;
+    height: 35px;
+    color: var(--cor2);
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 1%;
+}
+
+.cont textarea{
+    width: 400px;
+    height: 200px;
+    color:var(--cor2);
+    text-align: center;
+    padding-top: 1%;
+    border-radius: 10px;
+    border: none;
+}
+
+.cont input[type="submit"]{
+    width: 250px;
+    height: 50px;
+    padding: 1%;
+    background-color: var(--cor2);
+    color: var(--cor5);
+    border: none;
+    margin-top: 3%;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.cont input[type="submit"]:hover{
+    background-color: var(--cor6);
+}
+
+.cont img{
+    margin-bottom: -1%;
+}
